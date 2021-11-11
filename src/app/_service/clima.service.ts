@@ -15,6 +15,6 @@ export class ClimaService {
   constructor(private http: HttpClient){ }
 
   obtenerClima(ciudad: string): Observable<any> {
-    return this.http.get(`api.openweathermap.org/data/2.5/weather?q=${ciudad}&mode=json&units=metric&appid=${this.key}`);
+    return this.http.get(`http://api.openweathermap.org/data/2.5/weather?q=${ciudad}&mode=json&units=metric&appid=${this.key}`);
   }
 }

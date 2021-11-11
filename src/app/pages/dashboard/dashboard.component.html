@@ -4,7 +4,7 @@
     <img  width="200px" height="200px" src="assets/clima.png" alt="">
   </div>
   <div class="col-lg-6 mt-3">
-    <input type="text" class="form-control" placeholder="Ingrese ciudad">
+    <input type="text" class="form-control" placeholder="Ingrese ciudad" [(ngModel)]="ciudad">
     <br>
     <button (click)="mostrarClima()" class="btn btn-primary btn-block">Aceptar</button>
     <br>
