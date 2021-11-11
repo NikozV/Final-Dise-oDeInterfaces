@@ -6,14 +6,14 @@
   <div class="col-lg-6 mt-3">
     <input type="text" class="form-control" placeholder="Ingrese ciudad">
     <br>
-    <button class="btn btn-primary btn-block">Aceptar</button>
+    <button (click)="mostrarClima()" class="btn btn-primary btn-block">Aceptar</button>
     <br>
     <br>
 
     <div class="card-header">Clima actual</div>
     <div class="card-body">
-      <p class="card-text"> <b>Temperatura </b> </p>
-      <p class="card-text"> <b>Grados </b> </p>
+      <p class="card-text"> <b>Temperatura: </b>{{ temperatura }} ºC </p>
+      <p class="card-text"> <b>Humedad: </b> {{ humedad }}</p>
     </div>
 
   </div>

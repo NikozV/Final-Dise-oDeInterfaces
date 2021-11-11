@@ -9,12 +9,12 @@ export class ClimaService {
 
 
   key='b3290ab41061431163617beb68d3b208';
-  url= 'api.openweathermap.org/data/2.5/weather?q={city name}&appid={API key}';
+  //url= 'api.openweathermap.org/data/2.5/weather?q={city name}&appid={API key}';
 
 
   constructor(private http: HttpClient){ }
 
   obtenerClima(ciudad: string): Observable<any> {
-    return this.http.get(`api.openweathermap.org/data/2.5/weather?q=${ciudad}&appid=${this.key}`);
+    return this.http.get(`api.openweathermap.org/data/2.5/weather?q=${ciudad}&mode=json&units=metric&appid=${this.key}`);
   }
 }
